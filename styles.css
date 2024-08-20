@@ -65,10 +65,11 @@ body {
 .cover h1 {
   margin: 0;
   color: white;
-  font-size: 7rem;
+  font-size: 6rem;
   padding: 40px;
   width: 50%;
-  font-family: "Mukta", sans-serif;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -299,16 +300,15 @@ footer {
 }
 
 .testimonial-card {
-  background: #fff;
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   max-width: 300px;
-  transition: transform 0.3s ease;
-}
-
-.testimonial-card:hover {
-  transform: translateY(-10px);
+  padding: 20px;
+  opacity: 0;
 }
 
 .testimonial-text {
@@ -349,4 +349,11 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+}
+.quote {
+  font-size: 40px;
+}
+.quote-holder {
+  display: flex;
+  justify-content: end;
 }

@@ -90,3 +90,24 @@ t2.to(".staggerImage", {
     opacity: 1,
     yPercent: 0,
   });
+
+const t3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".testimonial-section",
+    start: "top 70%",
+  },
+});
+
+t3.set(".testimonial-card", {
+  opacity: 0,
+  yPercent: 100,
+});
+
+t3.to(".testimonial-card", {
+  opacity: 1,
+  yPercent: 0,
+  ease: "power4.out",
+  duration: 1.5,
+  delay: 0,
+  stagger: 0.2,
+});
