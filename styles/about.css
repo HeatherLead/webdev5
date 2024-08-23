@@ -49,7 +49,7 @@ nav ul li a.active {
   color: #c65b3e;
   font-weight: 600;
 }
-.title {
+.titleAbout {
   font-family: "Merienda", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -62,7 +62,7 @@ nav ul li a.active {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   margin-bottom: 48px;
 }
 .text {
@@ -81,9 +81,11 @@ nav ul li a.active {
 .imageHolder {
   max-width: 500px;
   height: fit-content;
+  overflow: hidden;
 }
 .coverImage {
   width: 100%;
+  opacity: 0;
 }
 .team {
   padding: 40px;
@@ -117,6 +119,7 @@ p {
   flex-direction: column;
   gap: 12px;
   width: fit-content;
+  opacity: 0;
 }
 .card a {
   color: white;
@@ -135,7 +138,22 @@ p {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .card p {
   color: rgb(225, 225, 225);
+}
+@media (max-width: 768px) {
+  .titleAbout {
+    font-size: 4em;
+  }
+  .headingContainer h3 {
+    font-size: 2em;
+  }
+  .headingContainer p {
+    max-width: 400px;
+  }
+  .card {
+    margin-bottom: 40px;
+  }
 }

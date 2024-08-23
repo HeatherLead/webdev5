@@ -19,7 +19,44 @@ body {
   position: relative;
 }
 
-.title {
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.test a {
+  text-decoration: none;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 400;
+}
+
+nav ul li a.active {
+  color: #c65b3e;
+  font-weight: 600;
+}
+
+.titleAbout {
   font-family: "Merienda", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -37,6 +74,7 @@ body {
   padding: 20px;
   position: absolute;
   bottom: 0;
+  overflow: hidden;
 }
 
 .review {
@@ -50,6 +88,7 @@ body {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  opacity: 0;
 }
 
 .review p {

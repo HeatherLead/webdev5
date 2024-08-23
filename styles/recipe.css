@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   padding: 0;
   margin: 0;
@@ -76,6 +79,14 @@ nav ul li a.active {
   margin-bottom: 40px;
   flex-wrap: wrap;
 }
+.landingContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
 
 .headingContainer h1 {
   margin: 0;
@@ -143,7 +154,7 @@ nav ul li a.active {
 
 .nutrition-btn {
   display: block;
-  width: 100%;
+  width: 91%;
   padding: 12px;
   background-color: #ff7851;
   color: white;
@@ -153,6 +164,7 @@ nav ul li a.active {
   cursor: pointer;
   text-align: center;
   transition: background-color 0.3s;
+  text-decoration: none;
 }
 
 .nutrition-btn:hover {
@@ -212,4 +224,17 @@ nav ul li a.active {
 hr {
   border: 1px solid #111;
   border-radius: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 4em;
+    margin: 0;
+  }
+  .recipeContainer img {
+    max-width: 400px;
+  }
+  .headingContainer p {
+    max-width: 300px;
+  }
 }

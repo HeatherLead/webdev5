@@ -38,6 +38,7 @@ t1.fromTo(
     ".bottleImage",
     {
       y: "100%",
+      xPercent: -50, // Maintain centering during the animation
       ease: "power2.in",
     },
     {
@@ -93,21 +94,66 @@ t2.to(".staggerImage", {
 
 const t3 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".testimonial-section",
+    trigger: [".testimonial-section", ".card"],
     start: "top 70%",
   },
 });
 
-t3.set(".testimonial-card", {
+t3.set([".testimonial-card", ".card"], {
   opacity: 0,
   yPercent: 100,
 });
 
-t3.to(".testimonial-card", {
+t3.to([".testimonial-card", ".card"], {
   opacity: 1,
   yPercent: 0,
   ease: "power4.out",
   duration: 1.5,
   delay: 0,
   stagger: 0.2,
+});
+
+const t4 = gsap.timeline();
+
+t4.set([".review", ".coverImage", ".title"], {
+  opacity: 0,
+  yPercent: 100,
+});
+
+t4.to([".review", ".coverImage", ".title"], {
+  opacity: 1,
+  yPercent: 0,
+  ease: "power4.out",
+  duration: 1.5,
+  stagger: 0.2,
+});
+
+const t5 = gsap.timeline();
+
+t5.set([".text"], {
+  opacity: 0,
+  xPercent: -100,
+});
+
+t5.to([".text"], {
+  opacity: 1,
+  xPercent: 0,
+  ease: "power4.out",
+  duration: 1.5,
+  stagger: 0.2,
+});
+
+const t6 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".recipeContainer",
+    start: "40% 50%",
+  },
+});
+
+t6.to([".recipe-card"], {
+  rotation: "+=10",
+  duration: 0.1,
+  repeat: 7,
+  yoyo: true,
+  ease: "power2.inOut",
 });
