@@ -5,12 +5,8 @@ body {
   font-family: "Mukta", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background: rgb(255, 227, 204);
-  background: radial-gradient(
-    circle,
-    rgb(252 178 42) 0%,
-    rgba(254, 108, 0, 1) 100%
-  );
+  background: #568203;
+
   color: white;
 }
 
