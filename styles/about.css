@@ -1,0 +1,145 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: rgb(255, 227, 204);
+  background: radial-gradient(
+    circle,
+    rgb(252 178 42) 0%,
+    rgba(254, 108, 0, 1) 100%
+  );
+  color: white;
+}
+
+.container {
+  width: 100vw;
+  overflow: hidden;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+.test a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 400;
+}
+
+nav ul li a.active {
+  color: #c65b3e;
+  font-weight: 600;
+}
+.title {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 9em;
+  margin: 0;
+}
+.headingContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+.text {
+  max-width: 550px;
+}
+.text h3 {
+  font-family: "Mukta", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 4em;
+  margin: 0;
+}
+.text p {
+  margin: 0;
+}
+.imageHolder {
+  max-width: 500px;
+  height: fit-content;
+}
+.coverImage {
+  width: 100%;
+}
+.team {
+  padding: 40px;
+}
+.team h2 {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3em;
+}
+.avtar {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 0;
+  padding: 0;
+  border-radius: 12px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 24px;
+}
+p {
+  margin: 0;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  width: fit-content;
+}
+.card a {
+  color: white;
+}
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
+}
+.fa-brands {
+  font-size: 24px;
+}
+.cardHolder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card p {
+  color: rgb(225, 225, 225);
+}

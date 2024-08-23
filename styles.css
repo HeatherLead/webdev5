@@ -73,7 +73,10 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
+.ingridentButton {
+  text-decoration: none;
+  color: white;
+}
 nav {
   height: 3em;
   padding: 1em;
@@ -139,13 +142,15 @@ nav {
   font-size: 20px;
   font-weight: 200;
   width: 65%;
+  margin-bottom: 40px;
 }
 .knowUs {
-  padding: 20px;
+  padding: 12px;
   border-radius: 50px;
   background: transparent;
   border: 1px solid white;
   color: white;
+  text-decoration: none;
 }
 .know:hover {
   background: aliceblue;

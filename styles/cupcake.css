@@ -1,0 +1,6 @@
+.test {
+  height: 50vh;
+  width: 100%;
+  background: url("/assets/cupcakeCover.jpg");
+  background-size: cover;
+}
