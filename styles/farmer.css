@@ -1,16 +1,66 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-  background: rgb(255, 227, 204);
-  background: radial-gradient(
-    circle,
-    rgb(252 178 42) 0%,
-    rgba(254, 108, 0, 1) 100%
-  );
   color: #111;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url("/assets/farmersCover.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.title {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5em;
+  max-width: 800px;
+  margin-left: 20px;
+  color: white;
+}
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+.review {
+  flex: 1 1 45%;
+  padding: 20px;
+  min-width: 250px;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.review p {
+  margin: 0 0 10px 0;
+  font-size: 1.1em;
+}
+
+.farmer-name {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #ff6600;
 }

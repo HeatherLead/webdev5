@@ -157,7 +157,6 @@ nav {
 }
 .thirdContainer {
   width: 100%;
-  height: 100vh;
   background: rgb(255, 227, 204);
   background: radial-gradient(
     circle,
@@ -182,6 +181,7 @@ nav {
   align-items: center;
   overflow: hidden;
   gap: 80px;
+  flex-wrap: wrap;
 }
 .staggerContent {
   opacity: 0;
@@ -206,7 +206,7 @@ nav {
   font-size: 20px;
 }
 .staggerContainer {
-  width: 20vw;
+  width: 300px;
 }
 .buttonHolder {
   width: 40px;
