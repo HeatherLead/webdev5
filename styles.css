@@ -84,7 +84,7 @@ nav {
   justify-content: space-between;
 }
 .logo {
-  border-radius: 8px;
+  border-radius: 50%;
   height: inherit;
   cursor: pointer;
 }
