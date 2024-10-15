@@ -157,3 +157,11 @@ t6.to([".recipe-card"], {
   yoyo: true,
   ease: "power2.inOut",
 });
+const lenis = new Lenis();
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
